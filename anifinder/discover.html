@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discover Anime | AnimeFinder</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">Anime<span>Finder</span></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html" class="active">Discover</a>
+        </nav>
+    </header>
+
+    <main class="page-container">
+
+        <section class="page-heading">
+            <span class="eyebrow">YOUR TASTE. YOUR NEXT ANIME.</span>
+
+            <h1>Discover <span>Anime.</span></h1>
+
+            <p>
+                Pick your favourite genres and find something worth watching.
+            </p>
+        </section>
+
+        <section class="filter-panel">
+
+            <h2>Choose a genre</h2>
+            <div class="genre-list" id="genre-list"><button class="genre-chip" data-genre="Action">Action</button>
+<button class="genre-chip" data-genre="Adventure">Adventure</button>
+<button class="genre-chip" data-genre="Comedy">Comedy</button>
+<button class="genre-chip" data-genre="Drama">Drama</button>
+<button class="genre-chip" data-genre="Ecchi">Ecchi</button>
+<button class="genre-chip" data-genre="Fantasy">Fantasy</button>
+<button class="genre-chip" data-genre="Horror">Horror</button>
+<button class="genre-chip" data-genre="Mahou Shoujo">Mahou Shoujo</button>
+<button class="genre-chip" data-genre="Mecha">Mecha</button>
+<button class="genre-chip" data-genre="Music">Music</button>
+<button class="genre-chip" data-genre="Mystery">Mystery</button>
+<button class="genre-chip" data-genre="Psychological">Psychological</button>
+<button class="genre-chip" data-genre="Romance">Romance</button>
+<button class="genre-chip" data-genre="Sci-Fi">Sci-Fi</button>
+<button class="genre-chip" data-genre="Slice of Life">Slice of Life</button>
+<button class="genre-chip" data-genre="Sports">Sports</button>
+<button class="genre-chip" data-genre="Supernatural">Supernatural</button>
+<button class="genre-chip" data-genre="Thriller">Thriller</button>
+
+</div>
+
+           <div class="extra-filters"><div class="filter-group">
+    <label for="min-rating">Minimum rating ⭐</label>
+
+    <select id="min-rating">
+        <option value="0">Any rating</option>
+        <option value="60">6+/10</option>
+        <option value="70">7+/10</option>
+        <option value="80">8+/10</option>
+        <option value="90">9+/10</option>
+    </select>
+</div>
+
+<div class="filter-group">
+    <label for="episode-range">Episode count 📺</label>
+
+    <select id="episode-range">
+        <option value="any">Any episode count</option>
+        <option value="1-20">1–20 episodes</option>
+        <option value="21-50">21–50 episodes</option>
+        <option value="51-100">51–100 episodes</option>
+        <option value="101-200">101–200 episodes</option>
+        <option value="200+">200+ episodes</option>
+    </select>
+</div>
+
+<div class="filter-group">
+    <label for="anime-type">Anime type 🎬</label>
+
+    <select id="anime-type">
+        <option value="any">Any type</option>
+        <option value="TV">TV series</option>
+        <option value="MOVIE">Movie</option>
+        <option value="OVA">OVA</option>
+        <option value="SPECIAL">Special</option>
+        <option value="ONA">ONA</option>
+    </select>
+</div>
+
+</div>
+            <div class="filter-actions">
+
+                <button class="btn btn-secondary" id="clear-genres">
+                    Clear Selection
+                </button>
+
+                <button class="btn btn-primary" id="find-anime">
+                    Find My Anime →
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="results-section">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">YOUR NEXT WATCH</span>
+                    <h2 id="results-title">Explore Anime</h2>
+                </div>
+
+                <button class="btn btn-secondary" id="roulette-button">
+                    🎲 Anime Roulette
+                </button>
+            </div>
+
+            <p id="results-message" class="muted">
+                Select your genres or explore anime at random.
+            </p>
+
+            <div class="anime-grid" id="anime-results">
+                <p class="loading">Ready when you are...</p>
+            </div>
+
+            <button class="btn btn-secondary load-more"
+                    id="load-more"
+                    hidden>
+                Load More
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>AnimeFinder · Discover something unforgettable.</p>
+        <p class="footer-note">Anime information provided by AniList.</p>
+    </footer>
+
+    <script src="js/anilist-api.js"></script>
+    <script src="js/discover.js"></script>
+
+</body>
+</html>

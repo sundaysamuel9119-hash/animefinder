@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AnimeFinder | Discover Your Next Anime</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">Anime<span>Finder</span></a>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <span class="eyebrow">YOUR NEXT OBSESSION STARTS HERE</span>
+
+                <h1>Find your next <span>anime.</span></h1>
+
+                <p>
+                    Discover anime that matches your taste.
+                    Your next favourite is waiting.
+                </p>
+
+                <a href="discover.html" class="btn btn-primary">
+                    Discover Anime →
+                </a>
+                <form class="hero-search" id="anime-search-form">
+    <input
+        type="search"
+        id="anime-search-input"
+        placeholder="Search anime by name..."
+        aria-label="Search anime by name"
+        required
+    ><button type="submit" aria-label="Search">
+    🔎
+</button>
+
+</form>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">HANDPICKED BY THE ALGORITHM</span>
+                    <h2>Trending Now</h2>
+                </div>
+
+                <a href="discover.html" class="text-link">Explore All →</a>
+            </div>
+
+            <div class="anime-grid" id="trending-anime">
+                <p class="loading">Loading trending anime...</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <h2>Can't Decide?</h2>
+                </div>
+            </div>
+
+            <div class="roulette-banner">
+                <div>
+                    <h3>Leave it to the roulette.</h3>
+                    <p>Let us pick an anime for your next watch.</p>
+                </div>
+
+                <a href="discover.html?roulette=true"
+                   class="btn btn-primary">
+                    Surprise Me 🎲
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>AnimeFinder · Discover your next binge.</p>
+        <p class="footer-note">Anime information provided by AniList.</p>
+    </footer>
+
+    <script src="js/anilist-api.js"></script>
+    <script src="js/home.js"></script>
+
+</body>
+</html>
